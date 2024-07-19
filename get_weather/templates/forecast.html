@@ -1,0 +1,15 @@
+<div class="modal fade" id="forecast-modal" tabindex="-1" aria-labelledby="forecast-label" aria-hidden="true"
+  dats-bs-focus="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="add-item-label">Прогноз погоды в {{ city }} на {{ date|date:'Y.m.d' }}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+        {% for index, row in forecast.iterrows %}
+          <div class="align-middle">{{ row.date|date:'H:i' }} - {{ row.temperature_2m|floatformat:"1" }}°С</div>
+        {% endfor %}
+    
+    </div>
+  </div>
+</div>
