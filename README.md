@@ -17,4 +17,4 @@
 - requests-cache      1.2.1
 - retry-requests      2.0.0
 
-Для запуска приложения нужно выполнить команду django-admin startproject weather, затем из папки проекта выпольнить python manage.py startapp get_weather, скопировать файлы в папку get_weather и запустить командой python manage.py runserver
+Для запуска приложения нужно выполнить команду **django-admin startproject weather**, затем из папки проекта выпольнить **python manage.py startapp get_weather**, скопировать файлы в папку get_weather и запустить командой **python manage.py runserver**
